@@ -87,7 +87,7 @@ public class Rxjava02 {
                 });
     }
 
-    //输出数组,这样操作的 每一次onNext 就是数组中的每个元素
+    //输出数组,这样操作的 每一次onNext 就是数组中的一个元素
     public static void printArrays02()
     {
         List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,0);
