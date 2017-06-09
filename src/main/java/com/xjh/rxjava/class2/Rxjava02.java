@@ -205,9 +205,18 @@ public class Rxjava02 {
 
     }
 
+    //以不订阅的方式获取数据
+    public static void test2()
+    {
+        List<String> strings = Flowable.range(1, 100)
+                .map(integer -> "id:" + integer)
+                .toList().blockingGet();
+        System.out.print(strings);
+    }
+
 
     public static void main(String[] args) throws InterruptedException {
-        test();
+        test2();
     }
 
 
